@@ -7,6 +7,7 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/positioning.css">
 
     <title>Bootstrap</title>
 </head>
@@ -18,7 +19,7 @@
         <div class="p-3 mb-2 bg-light text-dark">
 
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 d-none d-md-block">
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Active</a>
@@ -39,7 +40,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">Your EMP Back <br> Office Tour</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -49,7 +50,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">An Overview of Insider <br> Tools Benefits</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary active">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary active" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -58,7 +59,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">The EMP Affiliate <br>Compensation Plan</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -67,7 +68,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">How The EMP Cocaching</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +91,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">Your EMP Back <br> Office Tour</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -100,7 +101,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">How To Get Help Support</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -109,7 +110,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">Getting Started:<br> The Essential Trainings</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
 
@@ -118,7 +119,7 @@
                             <div class="card-body text-center align-content-around d-flex flex-column justify-content-end align-items-center">
                                 <h5 class="card-title">The Fastest Way To Get <br>Your First Sale</h5>
                                 <p class="text-secondary">Live 15 minutes of daily motivation, inspiration and education with EMP World business leaders! Recommending</p>
-                                <a href="#" class="btn btn-outline-primary">LEARN MORE</a>
+                                <a href="#" class="btn btn-outline-primary" data-toggle="tooltip" title="click here">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
@@ -128,6 +129,11 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
